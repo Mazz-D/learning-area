@@ -30,7 +30,9 @@
     let substring = 'green eggs and ham';
 
     // Add your code here
-
+    let quoteLength = quote.length;
+    let index = quote.slice("I do not like them, Sam-I-Am.", -1);
+    let revisedQuote = quote.replace( index, quote.slice(substring));
     // Don't edit the code below here!
 
     const section = document.querySelector('section');

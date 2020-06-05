@@ -29,7 +29,11 @@
     let quote = 'I dO nOT lIke gREen eGgS anD HAM';
 
     // Add your code here
-
+    let quoteLowCase = quote.toLowerCase();
+    let firstLetter = quoteLowCase.slice(0,1);
+    let fixedQuote= quoteLowCase.replace(firstLetter, firstLetter.toUpperCase());
+    let index = fixedQuote.indexOf("green eggs and ham");
+    let finalQuote = fixedQuote.replace(fixedQuote.slice(index), "mushrooms and lettuce.");
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
